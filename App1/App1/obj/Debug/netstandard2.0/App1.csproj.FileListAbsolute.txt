@@ -1,0 +1,17 @@
+D:\Xamarin_MobileApp\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+D:\Xamarin_MobileApp\App1\App1\bin\Debug\netstandard2.0\App1.dll
+D:\Xamarin_MobileApp\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+D:\Xamarin_MobileApp\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.dll
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\LOGIN_PAGE\login_page.xaml.g.cs
+D:\Xamarin_MobileApp\App1\App1\obj\Debug\netstandard2.0\SIGNUP_PAGE\signup_page.xaml.g.cs

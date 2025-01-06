@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <!-- Start color (top) -->
+            <GradientStop Color="#0096FF" Offset="0.0" />
+            <!-- Middle color (optional) -->
+            <GradientStop Color="MidnightBlue" Offset="0.5" />
+            <!-- End color (bottom) -->
+            <GradientStop Color="#dark" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+        <Label Text="Welcome To SongsFy" TextTransform="Uppercase" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White"></Label>
+        
+        <!-- LOGO APP-->
+        <ContentView Padding="20" Margin="0,-20,0,0">
+            <Image BackgroundColor="white" WidthRequest="60" HeightRequest="200"></Image>
+        </ContentView>
+        <Button Text="masuk" 
+                TextColor="White" 
+                BackgroundColor="Transparent" 
+                HeightRequest="50" 
+                CornerRadius="10" 
+                BorderWidth="1"
+                BorderColor="white"
+                FontSize="16"
+                Clicked="SignIn"
+                
+        />
+
+        <StackLayout>
+            <Label Text="atau" HorizontalOptions="CenterAndExpand" TextTransform="Uppercase" FontAttributes="Bold" TextColor="White"></Label>
+        </StackLayout>
+
+        <Button Text="daftar"
+                TextColor="white"
+                BackgroundColor="Transparent"
+                BorderColor="white"
+                BorderWidth="1"
+                HeightRequest="50"
+                CornerRadius="10"
+                FontSize="16"
+                Clicked="SignUp"
+                />
+
+        <Button Text="masuk spotify"
+                BackgroundColor="Transparent"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="10"
+                Margin="0,90,0,0"
+                Clicked="SpotifyLogin">
+            
+        </Button>
+
+
+    </StackLayout>
+</ContentPage>
+

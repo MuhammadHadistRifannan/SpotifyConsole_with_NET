@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.SIGNUP_PAGE.signup_page"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#0096FF">
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <!-- Start color (top) -->
+            <GradientStop Color="#0096FF" Offset="0.0" />
+            <!-- Middle color (optional) -->
+            <GradientStop Color="MidnightBlue" Offset="0.5" />
+            <!-- End color (bottom) -->
+            <GradientStop Color="#dark" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <StackLayout Padding="30" VerticalOptions="Center">
+
+        <!-- Title -->
+        <Label Text="Daftar ke SongsFy"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                  Margin="30"/>
+
+        <!-- Username Entry -->
+        <Frame BackgroundColor="Transparent"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   Padding="10"
+                    BorderColor="white"
+                   Margin="0,0,0,10">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="icon_username.png" WidthRequest="24" HeightRequest="24" Margin="5,0,10,0" />
+                <Entry Placeholder="Username" TextColor="White" PlaceholderColor="White" FontSize="16" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Email Entry -->
+        <Frame BackgroundColor="Transparent"
+                   CornerRadius="8"
+               BorderColor="white"
+                   HasShadow="False"
+                   Padding="10"
+                   Margin="0,0,0,10">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="icon_email.png" WidthRequest="24" HeightRequest="24" Margin="5,0,10,0" />
+                <Entry Placeholder="Email" TextColor="White" PlaceholderColor="white" FontSize="16" />
+
+            </StackLayout>
+        </Frame>
+
+        <!-- Password Entry -->
+        <Frame BackgroundColor="Transparent"
+                   CornerRadius="8"
+               BorderColor="white"
+                   HasShadow="False"
+                   Padding="10"
+                   >
+            <StackLayout Orientation="Horizontal">
+                <Image Source="icon_password.png" WidthRequest="24" HeightRequest="24" Margin="5,0,10,0" />
+                <Entry Placeholder="Password" PlaceholderColor="white" TextColor="white" IsPassword="True" FontSize="16" />
+                <Image Source="icon_eye.png" WidthRequest="24" HeightRequest="24" HorizontalOptions="End" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Sign In Button -->
+        <Button Text="Sign Up"
+                    BackgroundColor="#019BFF"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                FontSize="Medium"
+                Margin="0,30,0,0"
+                    HeightRequest="50" 
+                />
+
+        <!-- OR Separator -->
+        <StackLayout Orientation="Horizontal" Margin="0,20,0,20" VerticalOptions="Center">
+            <BoxView WidthRequest="150" HeightRequest="0.5" Color="White" ScaleY="0.01"></BoxView>
+            <Label Text="or" TextColor="White" FontSize="14" HorizontalOptions="CenterAndExpand" />
+            <BoxView WidthRequest="150" HeightRequest="0.5" Color="White" ScaleY="0.01"></BoxView>
+        </StackLayout>
+
+        <!-- Social Media Login Buttons -->
+        <StackLayout Orientation="Horizontal" TranslationY="-20" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+            <ImageButton BackgroundColor="Transparent"  Source="facebook_logo.png" WidthRequest="50" HeightRequest="50" Padding="6" />
+            <ImageButton BackgroundColor="Transparent" Source="google_logo.png" WidthRequest="50" HeightRequest="50" Margin="10,0" />
+            <ImageButton BackgroundColor="Transparent" Source="apple_logo.png" WidthRequest="50" HeightRequest="50"/>
+        </StackLayout>
+
+        <!-- Login Link -->
+        <Label Text="Already have an account? "
+                   FontSize="14"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   Margin="0,20,0,0"
+               x:Name="nav_login"
+               >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="DirectLoginPage" NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Already have an account? " />
+                    <Span Text="Login Here" TextColor="#FFD700" FontAttributes="Bold" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+</ContentPage>

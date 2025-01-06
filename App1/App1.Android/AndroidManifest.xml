@@ -1,0 +1,15 @@
+﻿<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.songsfy.package">
+
+  <application android:label="SongsFy">
+    <activity android:name="MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="myapp" android:host="callback" />
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>
